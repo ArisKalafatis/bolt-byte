@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bolt &amp; Byte | Start Your Robotics Team</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23ff6a00'/%3E%3Ctext x='24' y='36' font-size='34' text-anchor='middle' font-weight='900' fill='%230a0a0b' font-family='Arial,sans-serif'%3EB%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#0a0a0b;--bg2:#121214;--text:#f4f4f5;--mute:#a8a8b0;--line:#26262b;--fire:linear-gradient(90deg,#ff3d00,#ff7a00 55%,#ffb000);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#0a0a0bee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{font-weight:900;font-style:italic;font-size:1.3rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--text);white-space:nowrap}
+.logo b{display:inline-block;background:var(--fire);color:var(--bg);padding:0 .35em;margin:0 .2em;transform:skewX(-12deg)}
+nav{display:flex;gap:22px;font-size:.8rem;font-weight:700;letter-spacing:.1em}
+nav a{color:var(--mute);text-decoration:none}
+nav a:hover{color:#ff8a00}
+@media(max-width:760px){nav{display:none}}
+.btn{display:inline-block;background:var(--fire);color:var(--bg);padding:12px 24px;border-radius:999px;font-weight:800;letter-spacing:.04em;text-decoration:none;border:0;font-size:.95rem;cursor:pointer;margin:4px}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid #4a4a52}
+.hero{text-align:center;padding:84px 0 60px;background:radial-gradient(60% 55% at 50% 100%,#ff5a0044,transparent 70%)}
+.kick{color:#ff8a00;font-weight:800;letter-spacing:.3em;font-size:.8rem;margin-bottom:14px}
+.hero h1{font-size:clamp(2.4rem,8vw,5rem);line-height:1.02;margin:0 0 18px;text-transform:uppercase;font-weight:900;letter-spacing:-.03em}
+.fire{background:var(--fire);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:600px;margin:0 auto 28px;color:var(--mute);font-size:1.1rem}
+.stats{display:flex;justify-content:center;gap:clamp(20px,6vw,64px);margin-top:44px;flex-wrap:wrap}
+.stats div{font-size:.85rem;color:var(--mute);text-transform:uppercase;letter-spacing:.1em}
+.stats strong{display:block;font-size:2.6rem;line-height:1;font-weight:900;background:var(--fire);-webkit-background-clip:text;background-clip:text;color:transparent}
+section{padding:64px 0}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.eyebrow{color:#ff8a00;font-weight:800;letter-spacing:.25em;font-size:.75rem;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.1;margin:6px 0 12px;text-transform:uppercase;font-weight:900;letter-spacing:-.02em}
+.sub{color:var(--mute);margin:0 0 30px;max-width:620px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative;overflow:hidden}
+.alt .card{background:var(--bg)}
+.card:hover{border-color:#ff7a0088}
+.card h3{margin:0 0 6px;font-size:1.1rem;text-transform:uppercase;letter-spacing:.03em}
+.card p{margin:0;color:var(--mute)}
+.tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.12em;color:var(--bg);background:var(--fire);padding:2px 10px;border-radius:999px;margin-bottom:12px}
+.big{position:absolute;right:14px;top:-6px;font-size:4.5rem;font-weight:900;color:#ffffff0d;line-height:1}
+.price{font-size:2.2rem;font-weight:900;margin:8px 0}
+.price small{font-size:.9rem;color:var(--mute);font-weight:500}
+.card ul{padding-left:18px;margin:12px 0 0;color:var(--mute)}
+.pop{border:2px solid #ff7a00;box-shadow:0 0 40px #ff5a0033}
+.cta{text-align:center;background:radial-gradient(70% 90% at 50% 100%,#ff5a0055,transparent 70%),var(--bg2)}
+form{display:grid;gap:12px;max-width:560px}
+input,select,textarea{width:100%;padding:13px;border-radius:12px;border:1px solid #3a3a42;background:var(--bg2);color:var(--text);font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid #ff7a00;outline-offset:1px}
+label{font-weight:700;font-size:.85rem;letter-spacing:.04em}
+footer{border-top:1px solid var(--line);padding:40px 0 30px;color:var(--mute);font-size:.9rem}
+.fgrid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer h4{margin:0 0 8px;color:var(--text);text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+footer a{display:block;color:var(--mute);text-decoration:none;padding:2px 0}
+footer a:hover{color:#ff8a00}
+.copy{margin-top:26px;font-size:.8rem}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Bolt<b>&amp;</b>Byte</a>
+  <nav><a href="#top">HOME</a><a href="#help">WHO WE HELP</a><a href="#why">WHY A TEAM</a><a href="#packages">PACKAGES</a><a href="#contact">CONTACT</a></nav>
+  <a class="btn" href="#contact">START A TEAM</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div class="kick">ROBOTICS TEAM LAUNCH SERVICE</div>
+  <h1>Start your <span class="fire">robotics team</span><br>the right way</h1>
+  <p>From “we want a team” to competition-ready. We guide schools, clubs and families through FLL, FTC and FRC, step by step.</p>
+  <a class="btn" href="#contact">Book a free call</a><a class="btn ghost" href="#packages">See packages</a>
+  <div class="stats">
+    <div><strong>3</strong>Programs</div>
+    <div><strong>4</strong>Weeks to launch</div>
+    <div><strong>€0</strong>First call</div>
+  </div>
+</div></div>
+
+<section id="help"><div class="wrap">
+  <div class="eyebrow">Open to everyone</div>
+  <h2>Who we help</h2>
+  <p class="sub">If you want to build a robot and don’t know where to start, you’re in the right place.</p>
+  <div class="grid">
+    <div class="card"><span class="big">01</span><h3>Schools</h3><p>Launch a team or after-school club with a clear plan and budget.</p></div>
+    <div class="card"><span class="big">02</span><h3>Clubs and makerspaces</h3><p>Turn a group of curious students into a real competition team.</p></div>
+    <div class="card"><span class="big">03</span><h3>Families</h3><p>Help your child join a team, or start one with friends.</p></div>
+    <div class="card"><span class="big">04</span><h3>Student-led teams</h3><p>Independent teams that need guidance, structure and sponsors.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <div class="eyebrow">Pick your path</div>
+  <h2>Which competition is for you?</h2>
+  <p class="sub">FIRST has a program for almost every age. We help you choose, then get you ready.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">FLL</span><h3>FIRST LEGO League</h3><p>Ages 9–16. Build and program LEGO robots to solve missions, and present an innovation project.</p></div>
+    <div class="card"><span class="tag">FTC</span><h3>FIRST Tech Challenge</h3><p>Middle and high school. Design, build and code a mid-size robot for a themed alliance game.</p></div>
+    <div class="card"><span class="tag">FRC</span><h3>FIRST Robotics Competition</h3><p>High school. Industrial-size robots, big events and a team that runs like a small company.</p></div>
+  </div>
+</div></section>
+
+<section id="why"><div class="wrap">
+  <div class="eyebrow">More than robots</div>
+  <h2>Why start a team?</h2>
+  <p class="sub">A robotics team teaches skills that school rarely does.</p>
+  <div class="grid">
+    <div class="card"><h3>Teamwork</h3><p>Communication and collaboration under real deadlines.</p></div>
+    <div class="card"><h3>Engineering</h3><p>Design, build, test and fix, again and again.</p></div>
+    <div class="card"><h3>Programming</h3><p>Real code that makes a real machine move.</p></div>
+    <div class="card"><h3>Leadership</h3><p>Planning, decisions and taking responsibility.</p></div>
+    <div class="card"><h3>Marketing</h3><p>Sponsors, social media and telling your story.</p></div>
+  </div>
+</div></section>
+
+<section id="packages" class="alt"><div class="wrap">
+  <div class="eyebrow">Simple pricing</div>
+  <h2>Packages</h2>
+  <p class="sub">Every package starts with a free call. Prices can be adjusted for schools and groups.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Kickoff Session</h3>
+      <div class="price fire">€60 <small>one-time</small></div>
+      <p>One live session to get you moving.</p>
+      <ul><li>Choose the right program</li><li>Budget and registration checklist</li><li>Roles and a first-month plan</li></ul>
+    </div>
+    <div class="card pop">
+      <span class="tag">MOST POPULAR</span>
+      <h3>Team Launch</h3>
+      <div class="price fire">€240 <small>4 weeks</small></div>
+      <p>Weekly sessions while you set up.</p>
+      <ul><li>Everything in Kickoff</li><li>Robot basics and first programs</li><li>Sponsor pitch help</li><li>Chat support between sessions</li></ul>
+    </div>
+    <div class="card">
+      <h3>Season Mentor</h3>
+      <div class="price fire">€120 <small>per month</small></div>
+      <p>An experienced mentor all season.</p>
+      <ul><li>Weekly check-ins</li><li>Code and design reviews</li><li>Notebook and judging prep</li><li>Competition-day readiness</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">How it works</div>
+  <h2>Four steps to launch</h2>
+  <div class="grid" style="margin-top:24px">
+    <div class="card"><span class="big">1</span><h3>Free call</h3><p>Tell us about your team, idea and goals.</p></div>
+    <div class="card"><span class="big">2</span><h3>Your plan</h3><p>We suggest the program, budget and timeline.</p></div>
+    <div class="card"><span class="big">3</span><h3>We build</h3><p>Hands-on sessions, online or in person.</p></div>
+    <div class="card"><span class="big">4</span><h3>You compete</h3><p>Walk into your first event with confidence.</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="cta"><div class="wrap">
+  <div class="eyebrow">Let’s go</div>
+  <h2>Light the <span class="fire">spark</span></h2>
+  <p class="sub" style="margin-inline:auto">Tell us a little about your team. We’ll reply by email.</p>
+  <form id="f" style="margin:0 auto;text-align:left">
+    <div><label for="n">Your name</label><input id="n" required></div>
+    <div><label for="e">Your email</label><input id="e" type="email" required></div>
+    <div><label for="p">Interested in</label>
+      <select id="p"><option>FLL (ages 9–16)</option><option>FTC</option><option>FRC</option><option>Not sure yet</option></select></div>
+    <div><label for="m">About your team</label><textarea id="m" rows="4" placeholder="School, club or family? How many students?"></textarea></div>
+    <button class="btn" type="submit">Send request</button>
+    <p id="st" role="status" style="margin:0;color:#ffb000"></p>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><a class="logo" href="#top">Bolt<b>&amp;</b>Byte</a><p style="max-width:280px">We help new robotics teams get started the right way.</p></div>
+    <div><h4>Quick links</h4><a href="#help">Who we help</a><a href="#why">Why a team</a><a href="#packages">Packages</a><a href="#contact">Contact</a></div>
+  </div>
+  <div class="copy">© Bolt &amp; Byte. All rights reserved.</div>
+</div></footer>
+
+<script>
+// Put your real email address here (the one that will receive the messages).
+var EMAIL="aristarchoskalafatis@gmail.com";
+var f=document.getElementById("f"),st=document.getElementById("st"),btn=f.querySelector("button");
+f.addEventListener("submit",function(ev){
+  ev.preventDefault();
+  var v=function(i){return document.getElementById(i).value};
+  var data={name:v("n"),email:v("e"),interested_in:v("p"),message:v("m"),_subject:"New robotics team request",_replyto:v("e")};
+  btn.disabled=true;btn.textContent="Sending…";st.textContent="";
+  fetch("https://formsubmit.co/ajax/"+EMAIL,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
+  .then(function(r){return r.json()})
+  .then(function(j){
+    if(String(j.success)==="true"){f.reset();st.textContent="Thank you! We’ll reply by email soon.";}
+    else{throw new Error("fail")}
+  })
+  .catch(function(){st.textContent="Something went wrong. Please email us directly at "+EMAIL+".";})
+  .then(function(){btn.disabled=false;btn.textContent="Send request";});
+});
+</script>
+</body>
+</html>
