@@ -188,7 +188,7 @@ f.addEventListener("submit",function(ev){
   var v=function(i){return document.getElementById(i).value};
   var data={name:v("n"),email:v("e"),interested_in:v("p"),message:v("m"),_subject:"New robotics team request",_replyto:v("e")};
   btn.disabled=true;btn.textContent="Sending…";st.textContent="";
-  fetch("https://formsubmit.co/ajax/a.kalafatis@pyroneers.org ,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
+  fetch("https://formsubmit.co/ajax/+EMAIL",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
   .then(function(r){return r.json()})
   .then(function(j){
     if(String(j.success)==="true"){f.reset();st.textContent="Thank you! We’ll reply by email soon.";}
