@@ -59,112 +59,117 @@ footer h4{margin:0 0 8px;color:var(--text);text-transform:uppercase;letter-spaci
 footer a{display:block;color:var(--mute);text-decoration:none;padding:2px 0}
 footer a:hover{color:#ff8a00}
 .copy{margin-top:26px;font-size:.8rem}
+.right{display:flex;align-items:center;gap:8px}
+.lang{display:flex;border:1px solid #3a3a42;border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--mute);font-weight:800;font-size:.75rem;padding:7px 11px;cursor:pointer}
+.lang button.on{background:var(--fire);color:var(--bg)}
+@media(max-width:520px){.btn.nav{padding:9px 14px;font-size:.78rem;margin:0}.logo{font-size:1.1rem}}
 </style>
 </head>
 <body>
 <header><div class="wrap">
   <a class="logo" href="#top">Bolt<b>&amp;</b>Byte</a>
-  <nav><a href="#top">HOME</a><a href="#help">WHO WE HELP</a><a href="#why">WHY A TEAM</a><a href="#packages">PACKAGES</a><a href="#contact">CONTACT</a></nav>
-  <a class="btn" href="#contact">START A TEAM</a>
+  <nav><a href="#top" data-gr="ΑΡΧΙΚΗ">HOME</a><a href="#help" data-gr="ΠΟΙΟΥΣ ΒΟΗΘΑΜΕ">WHO WE HELP</a><a href="#why" data-gr="ΓΙΑΤΙ ΟΜΑΔΑ">WHY A TEAM</a><a href="#packages" data-gr="ΠΑΚΕΤΑ">PACKAGES</a><a href="#contact" data-gr="ΕΠΙΚΟΙΝΩΝΙΑ">CONTACT</a></nav>
+  <div class="right"><div class="lang"><button type="button" data-l="en">EN</button><button type="button" data-l="el">GR</button></div><a class="btn nav" href="#contact" data-gr="ΞΕΚΙΝΗΣΤΕ">START A TEAM</a></div>
 </div></header>
 
 <main id="top">
 <div class="hero"><div class="wrap">
-  <div class="kick">ROBOTICS TEAM LAUNCH SERVICE</div>
-  <h1>Start your <span class="fire">robotics team</span><br>the right way</h1>
-  <p>From “we want a team” to competition-ready. We guide schools, clubs and families through FLL, FTC and FRC, step by step.</p>
-  <a class="btn" href="#contact">Book a free call</a><a class="btn ghost" href="#packages">See packages</a>
+  <div class="kick" data-gr="ΥΠΗΡΕΣΙΑ ΕΚΚΙΝΗΣΗΣ ΟΜΑΔΑΣ ΡΟΜΠΟΤΙΚΗΣ">ROBOTICS TEAM LAUNCH SERVICE</div>
+  <h1 data-gr="Ξεκινήστε την <span class=&quot;fire&quot;>ομάδα ρομποτικής</span><br>με τον σωστό τρόπο">Start your <span class="fire">robotics team</span><br>the right way</h1>
+  <p data-gr="Από το «θέλουμε μια ομάδα» μέχρι την πρώτη διοργάνωση. Καθοδηγούμε σχολεία, συλλόγους και οικογένειες στα FLL, FTC και FRC, βήμα βήμα.">From “we want a team” to competition-ready. We guide schools, clubs and families through FLL, FTC and FRC, step by step.</p>
+  <a class="btn" href="#contact" data-gr="Κλείστε δωρεάν κλήση">Book a free call</a><a class="btn ghost" href="#packages" data-gr="Δείτε τα πακέτα">See packages</a>
   <div class="stats">
-    <div><strong>3</strong>Programs</div>
-    <div><strong>4</strong>Weeks to launch</div>
-    <div><strong>€0</strong>First call</div>
+    <div><strong>3</strong><span data-gr="Προγράμματα">Programs</span></div>
+    <div><strong>4</strong><span data-gr="Εβδομάδες για την εκκίνηση">Weeks to launch</span></div>
+    <div><strong>€0</strong><span data-gr="Πρώτη κλήση">First call</span></div>
   </div>
 </div></div>
 
 <section id="help"><div class="wrap">
-  <div class="eyebrow">Open to everyone</div>
-  <h2>Who we help</h2>
-  <p class="sub">If you want to build a robot and don’t know where to start, you’re in the right place.</p>
+  <div class="eyebrow" data-gr="Ανοιχτό σε όλους">Open to everyone</div>
+  <h2 data-gr="Ποιους βοηθάμε">Who we help</h2>
+  <p class="sub" data-gr="Αν θέλετε να φτιάξετε ένα ρομπότ και δεν ξέρετε από πού να ξεκινήσετε, είστε στο σωστό μέρος.">If you want to build a robot and don’t know where to start, you’re in the right place.</p>
   <div class="grid">
-    <div class="card"><span class="big">01</span><h3>Schools</h3><p>Launch a team or after-school club with a clear plan and budget.</p></div>
-    <div class="card"><span class="big">02</span><h3>Clubs and makerspaces</h3><p>Turn a group of curious students into a real competition team.</p></div>
-    <div class="card"><span class="big">03</span><h3>Families</h3><p>Help your child join a team, or start one with friends.</p></div>
-    <div class="card"><span class="big">04</span><h3>Student-led teams</h3><p>Independent teams that need guidance, structure and sponsors.</p></div>
+    <div class="card"><span class="big">01</span><h3 data-gr="Σχολεία">Schools</h3><p data-gr="Ξεκινήστε ομάδα ή εξωσχολική λέσχη με σαφές πλάνο και προϋπολογισμό.">Launch a team or after-school club with a clear plan and budget.</p></div>
+    <div class="card"><span class="big">02</span><h3 data-gr="Σύλλογοι και makerspaces">Clubs and makerspaces</h3><p data-gr="Κάντε μια παρέα περίεργων μαθητών μια πραγματική ομάδα διαγωνισμών.">Turn a group of curious students into a real competition team.</p></div>
+    <div class="card"><span class="big">03</span><h3 data-gr="Οικογένειες">Families</h3><p data-gr="Βοηθήστε το παιδί σας να μπει σε μια ομάδα ή ξεκινήστε μία με φίλους.">Help your child join a team, or start one with friends.</p></div>
+    <div class="card"><span class="big">04</span><h3 data-gr="Ομάδες μαθητών">Student-led teams</h3><p data-gr="Ανεξάρτητες ομάδες που χρειάζονται καθοδήγηση, οργάνωση και χορηγούς.">Independent teams that need guidance, structure and sponsors.</p></div>
   </div>
 </div></section>
 
 <section class="alt"><div class="wrap">
-  <div class="eyebrow">Pick your path</div>
-  <h2>Which competition is for you?</h2>
-  <p class="sub">FIRST has a program for almost every age. We help you choose, then get you ready.</p>
+  <div class="eyebrow" data-gr="Διαλέξτε τον δρόμο σας">Pick your path</div>
+  <h2 data-gr="Ποιος διαγωνισμός σάς ταιριάζει;">Which competition is for you?</h2>
+  <p class="sub" data-gr="Το FIRST έχει πρόγραμμα για σχεδόν κάθε ηλικία. Σας βοηθάμε να επιλέξετε και μετά να ετοιμαστείτε.">FIRST has a program for almost every age. We help you choose, then get you ready.</p>
   <div class="grid">
-    <div class="card"><span class="tag">FLL</span><h3>FIRST LEGO League</h3><p>Ages 9–16. Build and program LEGO robots to solve missions, and present an innovation project.</p></div>
-    <div class="card"><span class="tag">FTC</span><h3>FIRST Tech Challenge</h3><p>Middle and high school. Design, build and code a mid-size robot for a themed alliance game.</p></div>
-    <div class="card"><span class="tag">FRC</span><h3>FIRST Robotics Competition</h3><p>High school. Industrial-size robots, big events and a team that runs like a small company.</p></div>
+    <div class="card"><span class="tag">FLL</span><h3>FIRST LEGO League</h3><p data-gr="Ηλικίες 9–16. Φτιάξτε και προγραμματίστε ρομπότ LEGO για να λύνουν αποστολές και παρουσιάστε ένα καινοτόμο project.">Ages 9–16. Build and program LEGO robots to solve missions, and present an innovation project.</p></div>
+    <div class="card"><span class="tag">FTC</span><h3>FIRST Tech Challenge</h3><p data-gr="Γυμνάσιο και λύκειο. Σχεδιάστε, κατασκευάστε και προγραμματίστε ένα ρομπότ μεσαίου μεγέθους για ένα παιχνίδι συμμαχιών.">Middle and high school. Design, build and code a mid-size robot for a themed alliance game.</p></div>
+    <div class="card"><span class="tag">FRC</span><h3>FIRST Robotics Competition</h3><p data-gr="Λύκειο. Ρομπότ βιομηχανικού μεγέθους, μεγάλες διοργανώσεις και μια ομάδα που λειτουργεί σαν μικρή εταιρεία.">High school. Industrial-size robots, big events and a team that runs like a small company.</p></div>
   </div>
 </div></section>
 
 <section id="why"><div class="wrap">
-  <div class="eyebrow">More than robots</div>
-  <h2>Why start a team?</h2>
-  <p class="sub">A robotics team teaches skills that school rarely does.</p>
+  <div class="eyebrow" data-gr="Κάτι παραπάνω από ρομπότ">More than robots</div>
+  <h2 data-gr="Γιατί να ξεκινήσετε ομάδα;">Why start a team?</h2>
+  <p class="sub" data-gr="Μια ομάδα ρομποτικής διδάσκει δεξιότητες που το σχολείο σπάνια καλύπτει.">A robotics team teaches skills that school rarely does.</p>
   <div class="grid">
-    <div class="card"><h3>Teamwork</h3><p>Communication and collaboration under real deadlines.</p></div>
-    <div class="card"><h3>Engineering</h3><p>Design, build, test and fix, again and again.</p></div>
-    <div class="card"><h3>Programming</h3><p>Real code that makes a real machine move.</p></div>
-    <div class="card"><h3>Leadership</h3><p>Planning, decisions and taking responsibility.</p></div>
-    <div class="card"><h3>Marketing</h3><p>Sponsors, social media and telling your story.</p></div>
+    <div class="card"><h3 data-gr="Ομαδικότητα">Teamwork</h3><p data-gr="Επικοινωνία και συνεργασία με πραγματικές προθεσμίες.">Communication and collaboration under real deadlines.</p></div>
+    <div class="card"><h3 data-gr="Μηχανική">Engineering</h3><p data-gr="Σχεδίαση, κατασκευή, δοκιμή και διόρθωση, ξανά και ξανά.">Design, build, test and fix, again and again.</p></div>
+    <div class="card"><h3 data-gr="Προγραμματισμός">Programming</h3><p data-gr="Πραγματικός κώδικας που κινεί μια πραγματική μηχανή.">Real code that makes a real machine move.</p></div>
+    <div class="card"><h3 data-gr="Ηγεσία">Leadership</h3><p data-gr="Σχεδιασμός, αποφάσεις και ανάληψη ευθύνης.">Planning, decisions and taking responsibility.</p></div>
+    <div class="card"><h3 data-gr="Μάρκετινγκ">Marketing</h3><p data-gr="Χορηγοί, κοινωνικά δίκτυα και η προβολή της ιστορίας σας.">Sponsors, social media and telling your story.</p></div>
   </div>
 </div></section>
 
 <section id="packages" class="alt"><div class="wrap">
-  <div class="eyebrow">Simple pricing</div>
-  <h2>Packages</h2>
-  <p class="sub">Every package starts with a free call. Prices can be adjusted for schools and groups.</p>
+  <div class="eyebrow" data-gr="Απλές τιμές">Simple pricing</div>
+  <h2 data-gr="Πακέτα">Packages</h2>
+  <p class="sub" data-gr="Κάθε πακέτο ξεκινά με δωρεάν κλήση. Οι τιμές μπορούν να προσαρμοστούν για σχολεία και ομάδες.">Every package starts with a free call. Prices can be adjusted for schools and groups.</p>
   <div class="grid">
     <div class="card">
-      <h3>Kickoff Session</h3>
-      <div class="price fire">€60 <small>one-time</small></div>
-      <p>One live session to get you moving.</p>
-      <ul><li>Choose the right program</li><li>Budget and registration checklist</li><li>Roles and a first-month plan</li></ul>
+      <h3 data-gr="Συνεδρία εκκίνησης">Kickoff Session</h3>
+      <div class="price fire">€60 <small data-gr="εφάπαξ">one-time</small></div>
+      <p data-gr="Μία ζωντανή συνεδρία για να ξεκινήσετε.">One live session to get you moving.</p>
+      <ul><li data-gr="Επιλογή του κατάλληλου προγράμματος">Choose the right program</li><li data-gr="Λίστα για προϋπολογισμό και εγγραφή">Budget and registration checklist</li><li data-gr="Ρόλοι και πλάνο πρώτου μήνα">Roles and a first-month plan</li></ul>
     </div>
     <div class="card pop">
-      <span class="tag">MOST POPULAR</span>
-      <h3>Team Launch</h3>
-      <div class="price fire">€240 <small>4 weeks</small></div>
-      <p>Weekly sessions while you set up.</p>
-      <ul><li>Everything in Kickoff</li><li>Robot basics and first programs</li><li>Sponsor pitch help</li><li>Chat support between sessions</li></ul>
+      <span class="tag" data-gr="ΠΙΟ ΔΗΜΟΦΙΛΕΣ">MOST POPULAR</span>
+      <h3 data-gr="Εκκίνηση ομάδας">Team Launch</h3>
+      <div class="price fire">€240 <small data-gr="4 εβδομάδες">4 weeks</small></div>
+      <p data-gr="Εβδομαδιαίες συνεδρίες όσο στήνετε την ομάδα.">Weekly sessions while you set up.</p>
+      <ul><li data-gr="Όλα όσα περιλαμβάνει η Εκκίνηση">Everything in Kickoff</li><li data-gr="Βασικά του ρομπότ και πρώτα προγράμματα">Robot basics and first programs</li><li data-gr="Βοήθεια στην παρουσίαση για χορηγούς">Sponsor pitch help</li><li data-gr="Υποστήριξη μέσω chat ανάμεσα στις συνεδρίες">Chat support between sessions</li></ul>
     </div>
     <div class="card">
-      <h3>Season Mentor</h3>
-      <div class="price fire">€120 <small>per month</small></div>
-      <p>An experienced mentor all season.</p>
-      <ul><li>Weekly check-ins</li><li>Code and design reviews</li><li>Notebook and judging prep</li><li>Competition-day readiness</li></ul>
+      <h3 data-gr="Μέντορας σεζόν">Season Mentor</h3>
+      <div class="price fire">€120 <small data-gr="ανά μήνα">per month</small></div>
+      <p data-gr="Έμπειρος μέντορας σε όλη τη σεζόν.">An experienced mentor all season.</p>
+      <ul><li data-gr="Εβδομαδιαίες συναντήσεις">Weekly check-ins</li><li data-gr="Έλεγχος κώδικα και σχεδίασης">Code and design reviews</li><li data-gr="Προετοιμασία για το ημερολόγιο και την κριτική επιτροπή">Notebook and judging prep</li><li data-gr="Ετοιμότητα για την ημέρα του διαγωνισμού">Competition-day readiness</li></ul>
     </div>
   </div>
 </div></section>
 
 <section><div class="wrap">
-  <div class="eyebrow">How it works</div>
-  <h2>Four steps to launch</h2>
+  <div class="eyebrow" data-gr="Πώς λειτουργεί">How it works</div>
+  <h2 data-gr="Τέσσερα βήματα για την εκκίνηση">Four steps to launch</h2>
   <div class="grid" style="margin-top:24px">
-    <div class="card"><span class="big">1</span><h3>Free call</h3><p>Tell us about your team, idea and goals.</p></div>
-    <div class="card"><span class="big">2</span><h3>Your plan</h3><p>We suggest the program, budget and timeline.</p></div>
-    <div class="card"><span class="big">3</span><h3>We build</h3><p>Hands-on sessions, online or in person.</p></div>
-    <div class="card"><span class="big">4</span><h3>You compete</h3><p>Walk into your first event with confidence.</p></div>
+    <div class="card"><span class="big">1</span><h3 data-gr="Δωρεάν κλήση">Free call</h3><p data-gr="Πείτε μας για την ομάδα, την ιδέα και τους στόχους σας.">Tell us about your team, idea and goals.</p></div>
+    <div class="card"><span class="big">2</span><h3 data-gr="Το πλάνο σας">Your plan</h3><p data-gr="Προτείνουμε πρόγραμμα, προϋπολογισμό και χρονοδιάγραμμα.">We suggest the program, budget and timeline.</p></div>
+    <div class="card"><span class="big">3</span><h3 data-gr="Χτίζουμε">We build</h3><p data-gr="Πρακτικές συνεδρίες, online ή δια ζώσης.">Hands-on sessions, online or in person.</p></div>
+    <div class="card"><span class="big">4</span><h3 data-gr="Διαγωνίζεστε">You compete</h3><p data-gr="Μπείτε στην πρώτη σας διοργάνωση με αυτοπεποίθηση.">Walk into your first event with confidence.</p></div>
   </div>
 </div></section>
 
 <section id="contact" class="cta"><div class="wrap">
-  <div class="eyebrow">Let’s go</div>
-  <h2>Light the <span class="fire">spark</span></h2>
-  <p class="sub" style="margin-inline:auto">Tell us a little about your team. We’ll reply by email.</p>
+  <div class="eyebrow" data-gr="Πάμε">Let’s go</div>
+  <h2 data-gr="Ανάψτε τη <span class=&quot;fire&quot;>σπίθα</span>">Light the <span class="fire">spark</span></h2>
+  <p class="sub" style="margin-inline:auto" data-gr="Πείτε μας λίγα για την ομάδα σας. Θα απαντήσουμε με email.">Tell us a little about your team. We’ll reply by email.</p>
   <form id="f" style="margin:0 auto;text-align:left">
-    <div><label for="n">Your name</label><input id="n" required></div>
-    <div><label for="e">Your email</label><input id="e" type="email" required></div>
-    <div><label for="p">Interested in</label>
-      <select id="p"><option>FLL (ages 9–16)</option><option>FTC</option><option>FRC</option><option>Not sure yet</option></select></div>
-    <div><label for="m">About your team</label><textarea id="m" rows="4" placeholder="School, club or family? How many students?"></textarea></div>
+    <div><label for="n" data-gr="Το όνομά σας">Your name</label><input id="n" required></div>
+    <div><label for="e" data-gr="Το email σας">Your email</label><input id="e" type="email" required></div>
+    <div><label for="p" data-gr="Ενδιαφέρεστε για">Interested in</label>
+      <select id="p"><option data-gr="FLL (ηλικίες 9–16)">FLL (ages 9–16)</option><option>FTC</option><option>FRC</option><option data-gr="Δεν είμαι σίγουρος/η ακόμα">Not sure yet</option></select></div>
+    <div><label for="m" data-gr="Για την ομάδα σας">About your team</label><textarea id="m" rows="4" placeholder="School, club or family? How many students?" data-gr-ph="Σχολείο, σύλλογος ή οικογένεια; Πόσοι μαθητές;"></textarea></div>
     <button class="btn" type="submit">Send request</button>
     <p id="st" role="status" style="margin:0;color:#ffb000"></p>
   </form>
@@ -173,29 +178,44 @@ footer a:hover{color:#ff8a00}
 
 <footer><div class="wrap">
   <div class="fgrid">
-    <div><a class="logo" href="#top">Bolt<b>&amp;</b>Byte</a><p style="max-width:280px">We help new robotics teams get started the right way.</p></div>
-    <div><h4>Quick links</h4><a href="#help">Who we help</a><a href="#why">Why a team</a><a href="#packages">Packages</a><a href="#contact">Contact</a></div>
+    <div><a class="logo" href="#top">Bolt<b>&amp;</b>Byte</a><p style="max-width:280px" data-gr="Βοηθάμε νέες ομάδες ρομποτικής να ξεκινήσουν σωστά.">We help new robotics teams get started the right way.</p></div>
+    <div><h4 data-gr="Γρήγοροι σύνδεσμοι">Quick links</h4><a href="#help" data-gr="Ποιους βοηθάμε">Who we help</a><a href="#why" data-gr="Γιατί ομάδα">Why a team</a><a href="#packages" data-gr="Πακέτα">Packages</a><a href="#contact" data-gr="Επικοινωνία">Contact</a></div>
   </div>
-  <div class="copy">© Bolt &amp; Byte. All rights reserved.</div>
+  <div class="copy" data-gr="© Bolt &amp; Byte. Με επιφύλαξη παντός δικαιώματος.">© Bolt &amp; Byte. All rights reserved.</div>
 </div></footer>
 
 <script>
 // Put your real email address here (the one that will receive the messages).
 var EMAIL="a.kalafatis@pyroneers.org";
+var T={en:{send:"Send request",sending:"Sending…",ok:"Thank you! We’ll reply by email soon.",err:"Something went wrong. Please email us directly at "},
+el:{send:"Αποστολή αιτήματος",sending:"Αποστολή…",ok:"Ευχαριστούμε! Θα απαντήσουμε σύντομα με email.",err:"Κάτι πήγε στραβά. Στείλτε μας email απευθείας στο "}};
 var f=document.getElementById("f"),st=document.getElementById("st"),btn=f.querySelector("button");
+var guess=function(){return (navigator.language||"").slice(0,2)==="el"?"el":"en"};
+var lang;try{lang=localStorage.getItem("lang")||guess()}catch(e){lang=guess()}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;
+  document.querySelectorAll("[data-gr]").forEach(function(e){if(e.dataset.en===undefined)e.dataset.en=e.innerHTML;e.innerHTML=l==="el"?e.dataset.gr:e.dataset.en});
+  document.querySelectorAll("[data-gr-ph]").forEach(function(e){if(e.dataset.enPh===undefined)e.dataset.enPh=e.placeholder;e.placeholder=l==="el"?e.dataset.grPh:e.dataset.enPh});
+  document.title=l==="el"?"Bolt & Byte | Ξεκινήστε την ομάδα ρομποτικής σας":"Bolt & Byte | Start Your Robotics Team";
+  document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("on",b.dataset.l===l)});
+  if(!btn.disabled)btn.textContent=T[l].send;
+  try{localStorage.setItem("lang",l)}catch(e){}
+}
+document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.l)})});
+setLang(lang);
 f.addEventListener("submit",function(ev){
   ev.preventDefault();
   var v=function(i){return document.getElementById(i).value};
   var data={name:v("n"),email:v("e"),interested_in:v("p"),message:v("m"),_subject:"New robotics team request",_replyto:v("e")};
-  btn.disabled=true;btn.textContent="Sending…";st.textContent="";
+  btn.disabled=true;btn.textContent=T[lang].sending;st.textContent="";
   fetch("https://formsubmit.co/ajax/"+EMAIL,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(data)})
   .then(function(r){return r.json()})
   .then(function(j){
-    if(String(j.success)==="true"){f.reset();st.textContent="Thank you! We’ll reply by email soon.";}
+    if(String(j.success)==="true"){f.reset();st.textContent=T[lang].ok;}
     else{throw new Error("fail")}
   })
-  .catch(function(){st.textContent="Something went wrong. Please email us directly at "+EMAIL+".";})
-  .then(function(){btn.disabled=false;btn.textContent="Send request";});
+  .catch(function(){st.textContent=T[lang].err+EMAIL+".";})
+  .then(function(){btn.disabled=false;btn.textContent=T[lang].send;});
 });
 </script>
 </body>
